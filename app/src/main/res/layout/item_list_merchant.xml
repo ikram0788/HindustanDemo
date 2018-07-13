@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.nadeem.hindustan.R" />
+
+        <import type="android.view.View" />
+
+        <import type="com.nadeem.hindustan.utils.Utils" />
+
+        <variable
+            name="model"
+            type="com.nadeem.hindustan.database.entities.Merchant" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="chieldClickHandler"
+            type="com.nadeem.hindustan.handlers.RecyclerChieldClickHandler" />
+
+        <variable
+            name="utils"
+            type="com.nadeem.hindustan.utils.Utils" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        style="@style/cardStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txt_bill_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text='@{@string/hint_bill_no+" : "+model.billNo}'
+                app:layout_constraintBottom_toBottomOf="@+id/ib_delete"
+                app:layout_constraintEnd_toStartOf="@+id/ib_delete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ib_delete"
+                tools:text="@string/hint_bill_no" />
+
+            <ImageButton
+                android:id="@+id/ib_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/ic_more"
+                android:onClick="@{(view)->chieldClickHandler.onClick(model,view,position)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text='@{@string/hint_name+"  : "+model.name}'
+                app:layout_constraintEnd_toEndOf="@+id/ib_delete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ib_delete"
+                tools:text="@string/hint_name" />
+
+            <TextView
+                android:id="@+id/txt_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text='@{@string/hint_mobile+" : "+model.mobile}'
+                app:layout_constraintEnd_toEndOf="@+id/ib_delete"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_name"
+                tools:text="@string/hint_mobile" />
+
+            <TextView
+                android:id="@+id/txt_credit_date"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text='@{@string/hint_credit_date+": "+Utils.parseDate(""+model.creditDate,11)}'
+                app:layout_constraintEnd_toStartOf="@+id/txt_debit_date"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_mobile"
+                tools:text="@string/hint_credit_date" />
+
+            <TextView
+                android:id="@+id/txt_debit_date"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text='@{@string/hint_debit_date+": "+Utils.parseDate(""+model.debitDate,11)}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_mobile"
+                tools:text="@string/hint_debit_date" />
+
+            <TextView
+                android:id="@+id/txt_credit"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text='@{@string/hint_credit+": "+model.credit}'
+                app:layout_constraintEnd_toStartOf="@+id/txt_debit_date"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_credit_date"
+                tools:text="@string/hint_credit" />
+
+            <TextView
+                android:id="@+id/txt_debit"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text='@{@string/hint_debit+": "+model.debit}'
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_debit_date"
+                tools:text="@string/hint_debit" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

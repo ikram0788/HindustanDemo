@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#f3f7f7f8</color>
+    <color name="colorAccent">#18afc4</color>
+    <color name="colorAccentDark">#0C8FA2</color>
+    <color name="colorNavigationBar">#f3f7f7f8</color>
+    <color name="colorWindowBackground">#efeff4</color>
+
+    <color name="colorTextPrimary">#333333</color>
+    <color name="colorTextSecondary">#797979</color>
+    <color name="colorGray">#edecec</color>
+    <color name="colorTextGray">#666666</color>
+
+    <color name="colorProfileBG">#D8D8D8</color>
+    <color name="colorTextCancel">#999999</color>
+    <color name="colorTextHint">#c7c7c7</color>
+</resources>

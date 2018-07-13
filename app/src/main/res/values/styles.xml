@@ -1,0 +1,182 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="actionMenuTextColor">@color/colorTextPrimary</item>
+        <item name="android:textAppearance">@style/textAppearance</item>
+
+
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="listPreferredItemPaddingLeft">5dp</item>
+        <item name="android:listPreferredItemPaddingRight">0dp</item>
+        <item name="android:radioButtonStyle">@style/radioButtonStyle</item>
+        <!--TODO put bellow color in v21 before launch-->
+        <item name="android:navigationBarColor">@color/colorAccentDark</item>
+        <!--<item name="searchViewStyle">@style/SearchView</item>-->
+    </style>
+    <style name="SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="closeIcon">@drawable/ic_delete</item>
+        <item name="android:hint">@string/hint_search</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+        <item name="navigationIcon">@drawable/ic_delete</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="textAppearance">@style/textAppearance</item>-->
+
+
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+<!--Button style-->
+    <style name="buttonStyle" parent="android:Widget.Button">
+        <item name="android:textColor">@color/selector_color_cta</item>
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:fontFamily">@font/font_helvetica_neue_medium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!--Card style-->
+
+    <style name="cardStyle" parent="CardView">
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardBackgroundColor">@color/colorPrimary</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+        <!--Style text appearance-->
+        <style name="textAppearance" parent="@android:style/TextAppearance.Small">
+            <item name="android:textColor">@color/colorTextPrimary</item>
+            <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+            <item name="android:textColorSecondary">@color/colorTextPrimary</item>
+            <item name="android:textColorSecondaryNoDisable">@color/colorTextPrimary</item>
+            <item name="android:textColorSecondaryInverseNoDisable">@color/colorTextPrimary</item>
+            <item name="android:textColorHint">@color/colorTextSecondary</item>
+            <item name="android:fontFamily">@font/helvetica_neue</item>
+        </style>
+        <!--Text style notmal-->
+        <!--Navigation item style-->
+        <style name="toolbarStyle.NavigationItemTheme">
+            <item name="android:background">@android:color/transparent</item>
+            <item name="android:textAppearance">@style/textAppearance</item>
+            <item name="android:itemBackground">@color/colorWindowBackground</item>
+            <item name="android:activatedBackgroundIndicator">@color/colorAccent</item>
+            <item name="android:colorPressedHighlight">@color/colorWindowBackground</item>
+            <item name="android:textColor">@color/colorTextPrimary</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+            <item name="android:gravity">start</item>
+            <item name="android:textStyle">normal</item>
+            <item name="android:layout_gravity">center_vertical</item>
+            <item name="android:listPreferredItemHeightSmall">60dp</item>
+            <item name="android:listDivider">@color/colorWindowBackground</item>
+            <item name="android:childDivider">@color/colorWindowBackground</item>
+            <item name="android:fontFamily">@font/helvetica_neue</item>
+        </style>
+    <!--Toolbar style-->
+
+    <style name="toolbarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionMenuTextColor">@color/colorTextGray</item>
+        <item name="buttonTint">@color/colorTextCancel</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+        <item name="android:textAppearance">@style/menuItem</item>
+    </style>
+
+    <style name="menuItem">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+        <!--Drawer style start-->
+        <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+            <item name="spinBars">true</item>
+            <item name="color">@color/colorTextPrimary</item>
+            <item name="thickness">1dp</item>
+            <item name="android:fontFamily">@font/font_helvetica_neue</item>
+            <item name="android:textSize">16sp</item>
+        </style>
+        <!--Drawer style end-->
+
+        <!--Start dialog style-->
+        <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+            <item name="android:windowTitleStyle">@style/WindowTitleStyle</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="colorButtonNormal">@color/colorAccent</item>
+            <item name="android:windowMinWidthMajor">80%</item>
+            <item name="android:windowMinWidthMinor">80%</item>
+        </style>
+    <!--Start dialog with background style-->
+    <style name="DialogWithBG" parent="AppCompatAlertDialogStyle">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
+    <!--End dialog with background style-->
+    <style name="WindowTitleStyle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+        <!--TextInputLayout style-->
+        <style name="txtInputLayout" parent="Widget.Design.TextInputLayout">
+            <!-- Hint color and label color in FALSE state -->
+            <item name="android:textColor">@color/colorTextPrimary</item>
+            <item name="android:editTextColor">@color/colorTextPrimary</item>
+            <item name="android:textColorHint">@color/colorTextHint</item>
+            <item name="android:fontFamily">@font/font_helvetica_neue</item>
+            <item name="android:textSize">16sp</item>
+            <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+            <item name="colorAccent">@color/colorGray</item>
+            <item name="colorControlNormal">@color/colorGray</item>
+            <item name="colorControlActivated">@color/colorAccent</item>
+        </style>
+        <style name="txtInputLayoutStyle" parent="txtInputLayout">
+            <item name="android:layout_marginTop">8dp</item>
+
+        </style>
+        <!--TextInputLayout style-->
+        <!--Radio Button style-->
+        <style name="radioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+            <item name="android:textColor">@color/colorTextPrimary</item>
+            <item name="android:textSize">14sp</item>
+        </style>
+        <!--Text style notmal-->
+
+        <style name="txtStyle" parent="android:Widget.TextView">
+            <item name="android:selectable">false</item>
+            <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        </style>
+        <!--Text style medium font-->
+
+        <style name="txtStyleMedium" parent="android:Widget.TextView">
+            <item name="android:selectable">false</item>
+            <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+            <item name="android:fontFamily">@font/font_helvetica_neue_medium</item>
+            <item name="android:textStyle">normal</item>
+    </style>
+    <!--QuantityView style-->
+    <style name="quantityText" parent="txtStyle">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/font_helvetica_neue</item>
+        <item name="android:textSize">?android:attr/textAppearanceLarge</item>
+    </style>
+    <!--QuantityViewButton style-->
+    <style name="quantityButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textStyle">bold</item>
+        <item name="android:minWidth">8dp</item>
+        <item name="android:minHeight">8dp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/colorAccentDark</item>
+    </style>
+
+</resources>

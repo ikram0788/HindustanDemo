@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">HindustanLever</string>
+    <!--Nav string-->
+    <string name="nav_home">Home</string>
+    <string name="nav_add">Add New</string>
+    <string name="nav_logout">Logout</string>
+    <!--header actions-->
+    <string name="action_search">Search</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_add_favorite">Add Favorite</string>
+    <string name="action_remove_favorite">Remove Favorite</string>
+    <string name="action_import_export">Import/Export</string>
+    <!--Login text-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_re_password">Confirm Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="action_login">LOGIN</string>
+    <string name="label_login">LOGIN</string>
+    <string name="label_not_register">Not registered yet? Register Now</string>
+    <!--Registration text-->
+    <string name="hint_name">Name</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="action_register_in_short">Register</string>
+    <string name="action_register">SIGN_UP</string>
+    <string name="label_register">SIGN UP</string>
+    <string name="label_already_register">Already have account? Login</string>
+<!--Merchant texgt-->
+    <string name="hint_bill_no">Bill No</string>
+    <string name="hint_debit">Debit</string>
+    <string name="hint_credit">Credit</string>
+    <string name="hint_debit_date">Debit Date</string>
+    <string name="hint_credit_date">Credit Date</string>
+    <string name="action_save">Save</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hint_search">Bill no/ Merchant name</string>
+<!--card menu option-->
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    <!--Dialog string-->
+    <string name="actiton_ok">OK</string>
+    <string name="label_dialog_warning">Warning</string>
+    <string name="label_dialog_message">Do you really want to delete this record?</string>
+    <string name="label_read_permission_available">Read permissions available.</string>
+    <string name="label_read_permission_not_available">Read permissions not granted.</string>
+    <string name="label_write_permission_available">Write permissions available.</string>
+    <string name="label_write_permission_not_available">Write permissions not granted.</string>
+    <string name="label_write_permission_rationale">Write permissions are needed to demonstrate access.</string>
+    <string name="title_make_record_backup">Make record safe</string>
+    <string name="message_make_record_backup">Select option to export/import record to/from xls file</string>
+    <string name="action_export">EXPORT TO XLS</string>
+    <string name="action_import">IMPORT FROM XLS</string>
+</resources>
